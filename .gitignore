@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual envs (in case anyone creates one in-tree)
+.venv/
+venv/
+
+# Environment & secrets — DO NOT commit real keys
+.env
+.env.local
+.env.*.local
+
+# Generated outputs from /compose runs
+outputs/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Model caches (in case anyone symlinks HF_HOME into the tree)
+hf_cache/
+huggingface/

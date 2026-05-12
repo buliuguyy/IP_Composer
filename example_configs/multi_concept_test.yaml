@@ -1,0 +1,18 @@
+base_image_path: assets/people/woman.png
+output_path: outputs/test_woman_kid_joyful.png
+prompt: null
+scale: 1.0
+seed: 420
+num_inference_steps: 50
+num_samples: 4
+concept_slots:
+  - name: age
+    image_path: assets/age/kid.png
+    subspace_source: text_embeddings/age_descriptions.npy
+    rank: 30
+    alpha: 1.0
+  - name: emotion
+    image_path: assets/emotions/joyful.png
+    subspace_source: text_embeddings/emotion_descriptions.npy
+    rank: 30
+    alpha: 1.0
